@@ -19,7 +19,7 @@ body {
   width: 60%;
   margin: 20% auto;
   border-radius: 6px;
-  box-shadow: 2px 1px #e0e9f130;
+  box-shadow: 4px 3px 5px #e0e9f130;
 }
 
 .main-img {
@@ -75,18 +75,26 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgb(228, 234, 248);
+  background-color: rgb(74, 86, 110);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.share-bg i {
+  color: white;
+}
 .shares {
   position: absolute;
-  left: 83.4%;
+  right: -55px;
   bottom: 65px;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
+}
+
+.share-options {
+  box-shadow: 4px 5px 1px #e0e9f130;
 }
 
 .share-options {
@@ -101,7 +109,8 @@ body {
 
 .share-options h6 {
   text-transform: uppercase;
-  color: #c7cbce;
+  color: #ffffff50;
+  line-height: 16px;
 }
 
 .shares .arrow {
@@ -110,7 +119,6 @@ body {
   background-color: rgb(74, 86, 110);
   margin: 0 45%;
   transform: rotate(45deg) translateY(-70%);
-  cursor: pointer;
 }
 
 .share-bg:hover #shares {
