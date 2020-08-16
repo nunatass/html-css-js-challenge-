@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;0,900;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0c122c;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 25%;
+}
+
+.dashboard {
+  width: 200px;
+  height: 120px;
+  background-color: #1e2c69;
+  border-radius: 6px 50px 6px 6px;
+  padding: 20px;
+  box-shadow: 2px 3px 5px #121e48;
+}
+
+.dashboard_header {
+  display: flex;
+  margin-bottom: 15px;
+}
+.dashboard_header i {
+  font-size: 32px;
+  margin-right: 15px;
+}
+
+.dashboard_header h1 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.dashboard_menu i {
+  padding: 8px;
+  background-color: #0c122c;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #697ed7;
+  margin-right: 10px;
+}
+
+.storage {
+  position: relative;
+  background-color: #1e2c69;
+  height: 95px;
+  width: 400px;
+  margin-top: 25px;
+  border-radius: 12px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 3px 6px 5px #121e48;
+}
+
+.storage_bar {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  border-radius: 6px;
+  background-color: #151e49;
+  margin: 15px 0;
+  display: flex;
+}
+
+.storage_used {
+  background-image: linear-gradient(90deg, #ff9f96, #fb4d92);
+  width: 80%;
+  height: 8px;
+  border-radius: 6px;
+}
+
+.storage_dot {
+  position: absolute;
+  background-color: white;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  left: calc(100% * 0.779);
+  margin: 0.5px;
+}
+
+.storage_range {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message {
+  position: absolute;
+  background-color: white;
+  width: 110px;
+  height: 40px;
+  border-radius: 4px;
+  right: 30px;
+  top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message h5 {
+  color: black;
+  font-size: 18px;
+}
+
+.message h6 {
+  color: gray;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 650px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dashboard {
+    height: 150px;
+    width: 80%;
+    background-color: #1e2c69;
+    border-radius: 12px 80px 12px 12px;
+    padding: 24px;
+    box-shadow: 2px 3px 5px #121e48;
+  }
+
+  .dashboard_menu i {
+    padding: 12px;
+    background-color: #0c122c;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #697ed7;
+    margin-right: 12px;
+  }
+
+  .storage {
+    width: 80%;
+    margin-left: 0;
+    padding: 24px;
+    height: 140px;
+  }
+
+  .message {
+    background-color: white;
+    top: 85%;
+    right: 30%;
+    box-shadow: 2px 3px 5px #121e48;
+  }
+}
