@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,900;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  margin: 13% 15%;
+}
+
+.post {
+  margin: auto;
+  background-color: white;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.message {
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.message p {
+  z-index: 2;
+  left: 30%;
+  color: grey;
+  font-size: 14px;
+}
+.message span {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.message span h6 {
+  display: inline;
+  font-size: 8px;
+  color: gray;
+  font-weight: 100;
+}
+
+.photo {
+  position: relative;
+}
+
+.photo img {
+  width: 280px;
+  height: 280px;
+  object-fit: fill;
+  border-radius: 2px;
+  box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.3);
+  margin-left: 20px;
+}
+
+.photo .btn {
+  position: absolute;
+  bottom: -5px;
+  left: 40px;
+  background-color: white;
+  box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  width: 60px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: lightgray;
+}
+
+.photo .btn i {
+  cursor: pointer;
+}
+
+.photo .btn i:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 850px) {
+  .post {
+    flex-direction: column-reverse;
+  }
+
+  .photo .btn {
+    position: absolute;
+    left: 40%;
+    bottom: 25px;
+    width: 40px;
+    padding: 4px;
+  }
+
+  .photo img {
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+
+  .photo img {
+    width: 180px;
+    height: 180px;
+  }
+}
