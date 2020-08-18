@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body {
+  max-width: 1440px;
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#logo {
+  margin-bottom: 25px;
+  width: 80px;
+}
+
+body h4 {
+  font-weight: 300;
+  color: var(--Gray);
+  font-size: 40px;
+  margin-bottom: 15px;
+  letter-spacing: 5px;
+}
+
+body h4 strong {
+  color: black;
+  font-weight: 600;
+}
+
+body h6 {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+main {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main form {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+main #email-input {
+  width: 60%;
+  padding: 15px;
+  border-radius: 30px;
+  border: var(--Pale-Blue) solid 0.5px;
+  outline: var(--Light-Red);
+  font-size: 16px;
+}
+
+main #email-input:focus {
+  border: var(--Light-Red) solid 1.5px;
+}
+
+main #email-input::placeholder {
+  color: var(--Pale-Blue);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+main #btn-notify {
+  width: 23%;
+  padding: 15px;
+  margin-left: 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--blue);
+  box-shadow: 1px 4px 15px var(--Pale-Blue);
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+main img {
+  width: 600px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.share div i {
+  color: var(--blue);
+  font-size: 14px;
+}
+
+.share {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+
+.share div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 8px;
+  border-radius: 50%;
+  margin: 8px;
+  border: 1px solid var(--Pale-Blue);
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.share .fb {
+  padding: 8px 12px;
+}
+footer p,
+footer h6,
+footer {
+  color: var(--Gray);
+  font-weight: 300px;
+  font-size: 10px;
+}
+
+footer h6 {
+  margin-top: 15px;
+}
