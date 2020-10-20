@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Work+Sans&display=swap");
+
+@keyframes menu-anim {
+  from {
+    width: 15px;
+    margin-left: 10px;
+  }
+
+  to {
+    width: 25px;
+    margin-left: 0px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  margin: 50px 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Fredoka One", cursive, sans-serif;
+  color: black;
+  cursor: pointer;
+}
+
+.barra-up {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+.barra-down {
+  width: 15px;
+  height: 3px;
+  margin-left: 10px;
+  background-color: black;
+}
+
+#menu-icon:hover {
+  cursor: pointer;
+
+  animation-name: menu-anim;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+main {
+  margin-left: 80px;
+  display: flex;
+  height: 70vh;
+  min-height: 300px;
+  min-width: 500px;
+  justify-content: space-between;
+}
+
+main h1 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  align-self: flex-end;
+  font-size: 45px;
+  padding: 0px 0px 40px 0px;
+}
+
+main h5 a {
+  position: absolute;
+  color: black;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  transform: rotate(-90deg);
+  font-size: 17px;
+  color: #bbb;
+  top: 50%;
+  right: -100px;
+}
+
+footer {
+  margin-left: 80px;
+}
+
+footer li {
+  display: inline;
+  padding: 10px;
+}
+
+footer li a {
+  text-transform: uppercase;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  color: #bbb;
+}

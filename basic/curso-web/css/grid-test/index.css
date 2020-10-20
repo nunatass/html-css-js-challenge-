@@ -1,0 +1,107 @@
+/*.game-board {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  background: #444;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+}
+*/
+
+.game-board {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #34495e;
+  color: #fff;
+  border: 6px solid #2c3e50;
+  border-radius: 10px;
+
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.box {
+  border: 6px solid #2c3e50;
+  border-radius: 2px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:nth-child(6) {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.box:nth-child(1) {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.box:nth-child(4) {
+  grid-area: 3/ 3/ 3 / 3;
+}
+
+.box:nth-child(6) {
+  grid-area: 1 / 2 / 2 / 4;
+}
+
+.box:nth-child(6) {
+  grid-area: 1 / 2 / 2 / span 2;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-columns: 2fr 2fr 3fr;
+  grid-template-areas:
+    "header header header"
+    "nav    main   aside"
+    "footer footer footer";
+  grid-gap: 0.75em;
+  background-color: #eee;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+  background-color: #9b59b6;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #3498db;
+}
+
+main {
+  grid-area: main;
+  background-color: #2ecc71;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #f1c40f;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #1abc9c;
+}

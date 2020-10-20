@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --primary--color: #185259;
+  --circle--color: #58c0ba;
+  --cicle--color--actived: #185259;
+}
+
+body {
+  color: black;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+#container {
+  margin: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+#menu-bar-icon {
+  visibility: hidden;
+}
+
+#menu li {
+  display: inline;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+#menu li a {
+  padding: 5px 15px;
+}
+
+#menu li a:hover {
+  background: #e3e3e1;
+  color: var(--primary--color);
+  border-radius: 1px;
+}
+.logo {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.475em;
+  color: black;
+}
+
+#side-menu {
+  font-size: 1.8rem;
+}
+
+#search,
+#menu-bar-icon,
+#shopping-cart {
+  cursor: pointer;
+  padding: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-slider {
+  overflow: hidden;
+  height: 70vh;
+}
+
+#image-slider img {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+#bunner-texts {
+  position: relative;
+  margin: 0 35%;
+  z-index: 2px;
+  text-align: center;
+  margin-top: -10%;
+  width: 100%;
+}
+
+#bunner-texts h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 5rem;
+  letter-spacing: 2.7px;
+  margin-top: -15%;
+  margin-left: -70%;
+}
+
+#bunner-texts h6 {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin-left: -32%;
+  color: var(--primary--color);
+}
+
+.who-are-we {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.who-are-we h4 {
+  font-size: 1.6rem;
+  padding: 15px;
+}
+
+#waw-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p + p {
+  margin-bottom: 20px;
+}
+
+.actions {
+  margin: 10px;
+  width: 300px;
+  height: 600px;
+}
+
+.img-1 {
+  background-image: url("imgs/imag-2.svg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.img-2 {
+  background-image: url("imgs/img-3.svg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.action-title {
+  margin-top: 70px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 53px;
+  letter-spacing: 0.17em;
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.action-btn {
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 12px;
+  font-size: 1.3rem;
+}
+
+.action-btn:hover {
+  background-color: #18525960;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  #bunner-texts h2 {
+    font-size: 4rem;
+    letter-spacing: 2.7px;
+    margin-top: -17%;
+  }
+
+  #bunner-texts h6 {
+    font-size: 1rem;
+    margin-left: -22%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #bunner-texts h2 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-top: -20%;
+  }
+
+  #bunner-texts h6 {
+    margin-left: -15%;
+    color: #185259;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #bunner-texts,
+  #menu li {
+    display: none;
+  }
+  #header {
+    justify-content: space-around;
+  }
+
+  #menu-bar-icon {
+    visibility: visible;
+  }
+}

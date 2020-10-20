@@ -1,0 +1,33 @@
+body {
+    background-image: url("../img/fundo.png");
+    background-color: #d2d2c1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.principal {
+    width: 900px;
+}
+
+
+.menu {
+    background: #c5c5b2;
+    padding: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #4b566a;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.sobre {
+    padding: 10px;
+    background: #e8e8d9;
+}
+
+h1 {
+    font-size: 1.2em;
+    color: #828271;
+}

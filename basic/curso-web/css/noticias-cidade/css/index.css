@@ -1,0 +1,95 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff url("../img/fundo.png") repeat-x;
+}
+
+/*header*/
+
+#container {
+  width: 750px;
+  margin: 0 auto;
+}
+
+#topo {
+  height: 150px;
+  background: url("../img/detalhe-topo.png") no-repeat right top;
+  padding-top: 25px;
+}
+
+.logo {
+  height: 66px;
+  width: 152px;
+  background: url("../img/logo.png") no-repeat center;
+  text-indent: -30000px;
+}
+
+/*menu*/
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/*menu topo*/
+
+#topo ul {
+  margin-top: 30px;
+  background: #b10333;
+  float: left;
+}
+
+#topo ul li {
+  float: left;
+}
+
+#topo ul a {
+  font-size: 0.9em;
+  display: block;
+  padding: 0.5em 1.5em;
+  line-height: 2.1em;
+  color: white;
+  text-decoration: none;
+  background: url("../img/divisor.png") no-repeat center left;
+}
+
+#topo ul .primeiro a {
+  background: none;
+}
+
+#topo ul a:hover {
+  color: #69001d;
+}
+
+body.home #navegacao a#home {
+  color: white;
+  background: #de003e;
+  cursor: pointer;
+}
+
+/* colunas */
+#lateral {
+  width: 180px;
+  float: left;
+  margin: 0px 0px 20px -750px;
+  background: yellow;
+} 
+
+#primario {
+  width: 270px;
+  float: left;
+  margin: 0px 0px 20px 195px;
+  background: blue;
+}
+
+#secundario {
+  width: 270px;
+  float: left;
+  margin: 0px 0px 20px 15px;
+  background: green;
+}

@@ -1,0 +1,23 @@
+div {
+  border: 1px solid blue;
+  text-align: center;
+}
+
+div.container {
+  background-color: gray;
+}
+
+#ok {
+  color: aqua;
+}
+
+a {
+  text-decoration: none;
+  color: #dc143c;
+}
+
+a:hover {
+  padding: 10px;
+  background-color: #dc143c;
+  color: white;
+}

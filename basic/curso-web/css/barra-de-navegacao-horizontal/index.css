@@ -1,0 +1,32 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    width: 720px;
+    background: #159cb0 url(img/fundo-horizontal.png) repeat-x;
+    float: left;
+}
+
+ul li {
+    float: left;
+}
+
+ul a {
+    display: block;
+    padding: 0px 2em;
+    line-height: 2em;
+    text-decoration: none;
+    color: white;
+    background: url(img/divisor.png) repeat-y left top;
+}
+
+ul .primeiro a {
+    background: none;
+}
+
+ul a:hover,
+#home #navegation .home a {
+    background-position: right bottom;
+    background: #44cade;
+
+}

@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Muli:wght@400;500;700;900&family=Nunito:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+:root {
+  font-size: 62.5%;
+}
+body {
+  color: black;
+  font-family: Muli, sans-serif;
+  background: #f5fafe;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+#header-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+  height: 100px;
+}
+
+.logo {
+  font-family: "Luckiest Guy", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+.logo em {
+  color: #ec1f46;
+}
+.search-form {
+  margin-left: 10px;
+}
+
+.search-input {
+  width: 30vw;
+  background-color: #f5fafe;
+  border-radius: 6px 0px 0px 6px;
+  height: 40px;
+  border: none;
+  padding: 15px;
+  color: #333;
+  align-self: center;
+  font-size: 1.2rem;
+}
+
+#btn-search {
+  background-color: #ec1f46;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  height: 40px;
+  padding: 0px 15px;
+  font-size: 16px;
+  color: white;
+}
+
+#btn-search:hover {
+  background-color: #ec1f4680;
+}
+
+#left-side-nav {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+#shopping-cart,
+#profile-pic,
+#name {
+  margin-right: 10px;
+}
+
+#search-icon,
+#menu-bar-icon {
+  display: none;
+  margin-right: 10px;
+}
+
+#profile-pic {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #ec1f46;
+}
+
+#header-nav {
+  background-color: #0a223d;
+  height: 60px;
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-nav a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: Muli, sans-serif;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+#header-nav a:hover {
+  color: #ec1f46;
+  background-color: #ffffff80;
+  border-radius: 2px;
+}
+
+#search-icon:hover,
+#menu-bar-icon:hover,
+#shopping-cart:hover {
+  color: #ec1f46;
+}
+
+main {
+  margin: 170px 10% 0 10%;
+  height: 100vh;
+}
+
+#hotel-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-hotel-inf {
+  padding: 20px;
+  font-size: 1rem;
+}
+
+#stars {
+  color: #f2994a;
+  font-size: 0.5rem;
+}
+
+.hotel-info-container h4 {
+  display: inline;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: bold;
+  font-style: normal;
+  color: #333;
+  text-align: center;
+}
+
+.hotel-info-container h6 {
+  display: inline;
+  color: white;
+  background-color: #ec1f46;
+  font-size: 1rem;
+  border-radius: 2px;
+  padding: 4px;
+}
+.hotel-info-container p {
+  padding: 4px;
+}
+.user-rattings {
+  display: inline-block;
+  color: white;
+  background-color: #ec1f46;
+  border-radius: 3px;
+  height: 30px;
+  padding: 5px;
+}
+
+.user-rattings h6 {
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.user-rattings:first-child {
+  font-size: 0.5rem;
+  font-weight: normal;
+}
+
+.hotel-details {
+  font-family: Nunito, sans-serif;
+  display: grid;
+  height: 400px;
+  margin-top: 10px;
+  grid-gap: 10px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
+  grid-template-areas:
+    "hotel-img hotel-booking"
+    "hotel-img  hotel-map";
+
+  color: white;
+}
+
+.hotel-img {
+  grid-area: hotel-img;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.hotel-map {
+  grid-area: hotel-map;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  padding: 0px 0px;
+}
+
+.hotel-booking {
+  display: flex;
+  flex-direction: column;
+  grid-area: hotel-booking;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #0a223d;
+  padding: 20px 30px;
+}
+
+.hotel-booking > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-booking a {
+  background-color: #ec1f46;
+  color: white;
+  text-align: center;
+  padding: 15px 0px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.booking-left-side h6 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.booking-left-side .price {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.booking-left-side :last-child {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 25px;
+  padding: 12px 0;
+}
+
+.icon-and-text {
+  display: flex;
+}
+
+.icon-and-text i {
+  margin-right: 10px;
+}
+.booking-right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-right-side div {
+  font-family: Nunito, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  padding: 10px 0;
+}
+
+.booking-right-side > div {
+  padding: 5px 0;
+}
+
+.package-summer-container {
+  margin-top: 50px;
+}
+
+.slide-bar {
+  display: flex;
+  font-size: 1.4rem;
+  font-family: Muli, sans-serif;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.slide-bar .selected,
+.slide-bar a:hover {
+  border-bottom: 3px solid #ec1f46;
+  padding-bottom: 6px;
+  color: #ec1f46;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+#package-summer-title {
+  font-family: Muli, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 30px 0;
+}
+#package-summer {
+  display: grid;
+  height: auto;
+  margin-top: 10px;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "package-highlights offer-details"
+    "package-summery-details  package-summery-details";
+}
+
+.packegs {
+  background-color: white;
+  margin-bottom: 40px;
+}
+
+.packegs h3 {
+  background-color: white;
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 10px;
+  color: white;
+  background-color: #0a223d;
+  border-radius: 4px 4px 0px 0px;
+}
+
+#package-highlights,
+#offer-details {
+  height: 200px;
+}
+
+#package-summery-details {
+  height: 400px;
+  grid-area: package-summery-details;
+}
+
+#package-highlights {
+  grid-area: package-highlights;
+}
+#offer-details {
+  grid-area: offer-details;
+}
+
+.other-packages h4.title {
+  font-family: Muli, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.4rem;
+  padding: 10px 0;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 800px) {
+  #search-icon,
+  #menu-bar-icon {
+    display: inline;
+  }
+  .search-form {
+    display: none;
+  }
+
+  #header-nav {
+    display: none;
+  }
+
+  main {
+    margin-top: 100px;
+  }
+  .hotel-details {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .hotel-img,
+  .hotel-booking,
+  .hotel-map {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .hotel-booking {
+    height: 200px;
+  }
+
+  .slide-bar a {
+    margin: 10px;
+  }
+  .slide-bar a {
+    font-size: 1rem;
+  }
+  .package-summer-container {
+    margin-top: 700px;
+  }
+}
