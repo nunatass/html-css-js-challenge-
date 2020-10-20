@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  /*COLORS*/
+
+  /* Primary */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink-lite: hsl(333, 80%, 67%, 0.08);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  /*Neutral*/
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Spartan", sans-serif;
+  color: var(--very-dark-magenta);
+  text-align: center;
+  background-color: white;
+  background-image: url("./images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 40px;
+}
+
+main .up .title p {
+  color: var(--dark-grayish-magenta);
+  margin: 24px 0;
+}
+
+.rate li {
+  display: inline;
+}
+
+/*mobile fst*/
+@media (max-width: 800px) {
+  main {
+    margin: 60px 6%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  main .up {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rates {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .rate {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90px;
+    background-color: var(--soft-pink-lite);
+    justify-content: space-evenly;
+    border-radius: 8px;
+    font-size: 1.2rem;
+  }
+
+  .cards {
+    width: 100%;
+    height: 945px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 100%;
+    height: 300px;
+    background-color: var(--very-dark-magenta);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+
+  .card .card-header {
+    display: flex;
+    margin: 30px;
+    font-size: 1.4rem;
+  }
+
+  .card .card-header img {
+    border-radius: 50%;
+    width: 50px;
+  }
+
+  .card .card-header .profile-info {
+    margin-left: 15px;
+    text-align: left;
+  }
+
+  .card .card-header .profile-info h4 {
+    font-size: 1.4rem;
+    color: var(--soft-pink);
+    margin-top: 8px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .card p {
+    margin: 10px 30px;
+    text-align: left;
+    line-height: 25px;
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    margin: 7% auto 40px auto;
+    width: 80%;
+  }
+
+  .up {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    text-align: left;
+  }
+
+  .rates {
+    height: 210px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .rates .fst {
+    margin-left: -80px;
+  }
+
+  .rates .snd {
+    margin-left: -40px;
+  }
+
+  .rate {
+    display: flex;
+    width: 100%;
+    height: 55px;
+    background-color: var(--soft-pink-lite);
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+  }
+
+  .cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 30%;
+    height: 240px;
+    background-color: var(--very-dark-magenta);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 60px;
+  }
+
+  .card .card-header {
+    display: flex;
+    margin: 25px;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+  }
+
+  .card .card-header img {
+    border-radius: 50%;
+    width: 50px;
+  }
+
+  .card .card-header .profile-info {
+    margin-left: 15px;
+    text-align: left;
+  }
+
+  .card .card-header .profile-info h4 {
+    font-size: 1.4rem;
+    color: var(--soft-pink);
+    margin-top: 8px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .card p {
+    margin: 10px 25px;
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 25px;
+    font-weight: normal;
+  }
+
+  .card-one {
+    margin-top: -10px;
+  }
+
+  .card-two {
+    margin-top: 15px;
+  }
+}
